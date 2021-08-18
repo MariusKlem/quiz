@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p 
+        {
+            font-size: 150%;
+            font-family: sans-serif;
+            font-style: oblique;
+            font-weight: 200;
+            font-display: 150;
+            font-stretch: expanded;
+            color: rgb(40, 167, 23); ;
+        }
+
+        #svar 
+        {
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+
+        #svar2 
+        {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hvem henger langt etter?</p>
+    <button onclick="btn1()" >John Espen</button>
+    <button onclick="btn2()" >Marius</button>
+    <button onclick="btn1()" >Stigh</button>
+
+    <h1 id="svar"></h1>
+    <h2 id="svar2"></h2>
+</body>
+
+<script>
+        function btn1() {
+            document.getElementById('svar').innerHTML = 'Feil';
+        }
+
+        function btn2() {
+            document.getElementById('svar2').innerHTML = 'Riktig';
+        }
+    
+        </script>
+</html>
